@@ -28,8 +28,8 @@ items = [
 (6, 'Dedolight DLED7', 'Light', 150.00, False)
 ]
 
-# Insert data into the 'employee' table
-insert_query = 'INSERT INTO employee (item_id, item_name, category, price, availability) VALUES (?, ?, ?, ?, ?);'
+# Insert data into the 'equipment' table
+insert_query = 'INSERT INTO equipment (item_id, item_name, category, price, availability) VALUES (?, ?, ?, ?, ?);'
 cursor.executemany(insert_query, items)
 
 # Commit the changes

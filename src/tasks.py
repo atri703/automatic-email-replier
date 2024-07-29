@@ -30,7 +30,6 @@ def research_info_for_email(email_content):
             Only provide the info needed and took from pdf, DONT try to write the email and make up your own thing.""",
             expected_output="""A set of bullet points of useful info for the email writer \
             or clear instructions that no useful material was found.""",
-            # context = {"categorize_email": categorize_email},
             output_file=f"research_info.txt",
             agent=email_researcher_agent
             )

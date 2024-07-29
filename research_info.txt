@@ -1,0 +1,15 @@
+Given the simulated queries and results, here’s the information that should be provided to the email writer:
+
+- **Canon EOS C300 Mark III**:
+  - Availability: Not available.
+  - Price: Not listed.
+
+- **Similar Available Items**:
+  - **Canon EOS C200**:
+    - Availability: Available.
+    - Price: $250/day.
+  - **Sony FX6**:
+    - Availability: Available.
+    - Price: $300/day.
+
+This information should help the email writer in crafting a thoughtful and helpful response to the customer’s inquiry.

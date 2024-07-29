@@ -1,17 +1,21 @@
 from crewai import Crew,Process
 from tasks import categorize_email,research_info_for_email,draft_email
 from agents import email_categorizer_agent, email_researcher_agent, email_writer_agent
+import sqlite3
 
-# email = """
-#         Subject: Inquiry about Camera Availability
+conn = sqlite3.connect('company.db')
+cursor = conn.cursor
 
-#         Dear Film Equipment Rental,
+email = """
+        Subject: Inquiry about Camera Availability
 
-#         I am interested in renting a Canon EOS C300 Mark III for an upcoming project. Can you please let me know if it is available and the rental price?
+        Dear Film Equipment Rental,
 
-#         Best regards,
-#         John Doe
-#         johndoe@example.com"""
+        I am interested in renting a Canon EOS C300 Mark III for an upcoming project. Can you please let me know if it is available and the rental price?
+
+        Best regards,
+        John Doe
+        johndoe@example.com"""
 
 # email = """
 #         Subject: Excellent Service!
@@ -38,6 +42,8 @@ from agents import email_categorizer_agent, email_researcher_agent, email_writer
 
 # """
 
+
+########### Assistance type info not present
 # email = """
 #         Subject: Need Help with Microphone Setup
 
@@ -67,7 +73,7 @@ from agents import email_categorizer_agent, email_researcher_agent, email_writer
 
 # """
 
-############## Assistance - Info is present
+############# Assistance - Info is present
 # email = """
 #         Subject: Need to know about different camera lenses
 
@@ -80,18 +86,18 @@ from agents import email_categorizer_agent, email_researcher_agent, email_writer
 # johndoe@example.com
 # """
 
-############## Assistance - Info is present
-email = """
-        Subject: Need to know about audio levels
+############# Assistance - Info is present
+# email = """
+#         Subject: Need to know about audio levels
 
-Hi,
+# Hi,
 
-Can anyone help me adjust the audio levels?
+# Can anyone help me adjust the audio levels?
 
-Thanks,
-John Doe
-johndoe@example.com
-"""
+# Thanks,
+# John Doe
+# johndoe@example.com
+# """
 
 
 
