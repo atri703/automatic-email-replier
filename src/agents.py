@@ -1,5 +1,5 @@
 from crewai import Agent
-from tools import pdf_search_tool #, sql_tools
+from tools import fetch_pdf_content #, sql_tools, pdf_search_tool,
 
 from dotenv import load_dotenv
 
@@ -41,13 +41,14 @@ email_researcher_agent=Agent(
             then recommend similar item, state that asked item is not there but something similar is available.
             if category is 'review_type' then analyse if review is positive or negative.
             if category is 'assistance_request_type' search through 'film_equipement.pdf', if you find relevant information pass it on email_writer_agent \
-            but if you do not find it 'NO USEFUL RESESARCH FOUND'
+            but if you do not find it 'NO USEFUL RESESARCH FOUND' and never make information on your own.
             if it is "general_handling" do not do anything.
             """,
     backstory="""You are a SQL expert as well as great researcher who can read long documents easily and understand and analyze what information our email writer needs to write a reply that \
                 will help the customer""",
-    tools=[pdf_search_tool],
+    # tools=[pdf_search_tool],
     # tools=[pdf_search_tool, sql_tools],
+    tools=[fetch_pdf_content],
     llm=llm_model,
     allow_delegation=False,
 )
@@ -68,7 +69,7 @@ email_writer_agent=Agent(
             with email id {csr@csr.com} but never make anything on your own. 
             If the customer email is 'general_handling' then forward email to customer service (so write a email to the customer service as well.).
             You never make up information. that hasn't been provided by the researcher or in the email.
-            Always sign off the emails in appropriate manner and from Atri the Manager.
+            Always sign off the emails in appropriate manner and from Atri.
             """,
     backstory="""You are a master at synthesizing a variety of information and writing a helpful email \
             that will address the customer's issues and provide them with helpful information""",

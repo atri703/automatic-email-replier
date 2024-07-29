@@ -27,7 +27,7 @@ def research_info_for_email(email_content):
             provided and search the database or user_manual.pdf based on category to find info needed to respond to the email
 
             EMAIL CONTENT:\n\n {email_content} \n\n
-            Only provide the info needed DONT try to write the email""",
+            Only provide the info needed and took from pdf, DONT try to write the email and make up your own thing.""",
             expected_output="""A set of bullet points of useful info for the email writer \
             or clear instructions that no useful material was found.""",
             # context = {"categorize_email": categorize_email},

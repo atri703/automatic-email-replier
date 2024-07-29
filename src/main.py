@@ -21,8 +21,8 @@ from agents import email_categorizer_agent, email_researcher_agent, email_writer
 # I recently rented the Sony FS7 camera, and I was extremely satisfied with the service and the equipment quality. Thank you for a great experience!
 
 # Best,
-# Jane Smith
-# janesmith@example.com
+# John Doe
+# johndoe@example.com
 # """
 
 # email = """
@@ -33,8 +33,8 @@ from agents import email_categorizer_agent, email_researcher_agent, email_writer
 # I rented the Dedolight DLED7 last week, and it did not function properly. The light was flickering and caused issues during my shoot. I am very disappointed with this experience.
 
 # Sincerely,
-# Michael Brown
-# michaelbrown@example.com
+# John Doe
+# johndoe@example.com
 
 # """
 
@@ -46,8 +46,8 @@ from agents import email_categorizer_agent, email_researcher_agent, email_writer
 # I am having trouble setting up the Rode NTG3 microphone I rented from your service. Can you provide me with some guidance or a manual to help me out?
 
 # Thanks,
-# Alice Green
-# alicegreen@example.com
+# John Doe
+# johndoe@example.com
 # """
 
 
@@ -62,25 +62,36 @@ from agents import email_categorizer_agent, email_researcher_agent, email_writer
 # Looking forward to your response.
 
 # Best,
-# Chris Lee
-# chrislee@example.com
+# John Doe
+# johndoe@example.com
 
 # """
 
 ############## Assistance - Info is present
+# email = """
+#         Subject: Need to know about different camera lenses
+
+# Hi,
+
+# I want to buy a new camera for filming. Can you suggest me different types of camera lenses used? 
+
+# Thanks,
+# John Doe
+# johndoe@example.com
+# """
+
+############## Assistance - Info is present
 email = """
-        Subject: Need to know about different camera lenses
+        Subject: Need to know about audio levels
 
 Hi,
 
-I want to buy a new camera for filming. Can you suggest me different types of camera lenses used? 
+Can anyone help me adjust the audio levels?
 
 Thanks,
-Alice Green
-alicegreen@example.com
+John Doe
+johndoe@example.com
 """
-
-
 
 
 

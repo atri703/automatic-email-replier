@@ -2,3 +2,4 @@ crewai
 crewai_tools
 langchain-google-genai==1.0.4
 composio_langchain
+sqlite3
