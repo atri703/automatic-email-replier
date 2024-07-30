@@ -1,17 +1,36 @@
 from crewai import Crew,Process
 from tasks import categorize_email,research_info_for_email,draft_email
 from agents import email_categorizer_agent, email_researcher_agent, email_writer_agent
-import sqlite3
 
-conn = sqlite3.connect('company.db')
-cursor = conn.cursor
+# email = """
+#         Subject: Inquiry about Camera Availability
+
+#         Dear Film Equipment Rental,
+
+#         I am interested in renting a Canon EOS C300 Mark III for an upcoming project. Can you please let me know if it is available and the rental price?
+
+#         Best regards,
+#         John Doe
+#         johndoe@example.com"""
+
+
+# email = """
+#         Subject: Inquiry about Camera Availability
+
+#         Dear Film Equipment Rental,
+
+#         I am interested in renting a Sony FS7 for an upcoming project. Can you please let me know if it is available and the rental price?
+
+#         Best regards,
+#         John Doe
+#         johndoe@example.com"""
 
 email = """
         Subject: Inquiry about Camera Availability
 
         Dear Film Equipment Rental,
 
-        I am interested in renting a Canon EOS C300 Mark III for an upcoming project. Can you please let me know if it is available and the rental price?
+        I am interested in renting a Rode NTG3 for an upcoming project. Can you please let me know if it is available and the rental price?
 
         Best regards,
         John Doe

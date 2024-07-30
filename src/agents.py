@@ -1,5 +1,5 @@
 from crewai import Agent
-from tools import fetch_pdf_content, sql_tools, pdf_search_tool
+from tools import fetch_pdf_content, sql_tools, pdf_search_tool, check_sql, execute_sql, list_tables, tables_schema
 
 from dotenv import load_dotenv
 
@@ -59,7 +59,8 @@ email_researcher_agent=Agent(
     backstory="""You are a SQL expert as well as great researcher who can read long documents easily and understand and analyze what information our email writer needs to write a reply that \
                 will help the customer""",
     # tools=[fetch_pdf_content, sql_tools],
-    tools=[sql_tools, pdf_search_tool],
+    # tools=[sql_tools, pdf_search_tool],
+    tools=[pdf_search_tool, list_tables, tables_schema, execute_sql, check_sql],
     # llm=llm_model,
     # llm=llm_groq,
     allow_delegation=False,

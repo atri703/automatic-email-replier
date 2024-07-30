@@ -1,15 +1,3 @@
-Given the simulated queries and results, here’s the information that should be provided to the email writer:
-
-- **Canon EOS C300 Mark III**:
-  - Availability: Not available.
-  - Price: Not listed.
-
-- **Similar Available Items**:
-  - **Canon EOS C200**:
-    - Availability: Available.
-    - Price: $250/day.
-  - **Sony FX6**:
-    - Availability: Available.
-    - Price: $300/day.
-
-This information should help the email writer in crafting a thoughtful and helpful response to the customer’s inquiry.
+- The Rode NTG3 is not currently available.
+- A similar item that is available is the "Sennheiser EW 112P G4."
+- The rental price for the Sennheiser EW 112P G4 is $70.
